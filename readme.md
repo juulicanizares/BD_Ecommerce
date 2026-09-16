@@ -1,4 +1,5 @@
 Proyecto de Base de Datos para un E-commerce
+
 Descripción
 Este proyecto consiste en el diseño e implementación del núcleo relacional de una base de datos para una plataforma de comercio electrónico en MySQL 8.x. El sistema gestiona todo el ciclo de vida operativo del e-commerce, abarcando desde el catálogo de productos, inventario, categorías y proveedores, hasta la gestión de clientes, transacciones de venta y detalles de órdenes. Además, incluye una capa avanzada de analítica de negocio, lógica transaccional, automatización mediante eventos y disparadores, y un esquema riguroso de seguridad basado en roles y mínimos privilegios.
 
@@ -11,6 +12,10 @@ Para garantizar la construcción correcta de la base de datos sin conflictos de 
 01_Esquema_y_Datos.sql
 
 Crea la base de datos ecommerce_db, la estructura completa de tablas principales (con sus claves primarias, foráneas e índices) y realiza la carga de datos iniciales.
+
+02_Consultas_Avanzadas.sql
+
+Contiene las 20 consultas complejas de analítica y reporteo (RFM, Cohort, Top ventas, rotación de inventario) para validar el funcionamiento y extraer inteligencia de negocio.
 
 03_Funciones.sql
 
@@ -32,6 +37,3 @@ Activa el programador de eventos (event_scheduler) y registra los 20 eventos pro
 
 Crea los 20 procedimientos almacenados transaccionales (START TRANSACTION, COMMIT, ROLLBACK) y otorga los permisos finales de ejecución.
 
-02_Consultas_Avanzadas.sql
-
-Contiene las 20 consultas complejas de analítica y reporteo (RFM, Cohort, Top ventas, rotación de inventario) para validar el funcionamiento y extraer inteligencia de negocio.
